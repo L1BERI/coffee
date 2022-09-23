@@ -28,6 +28,9 @@ $(function () {
       $('body').css('overflow-y', 'hidden')
     } else {
       $('body').css('overflow-y', 'visible')
+      $(window).scroll(function(){
+        $('body').scrollTop(0);
+});
     }
 
   }, 0);
