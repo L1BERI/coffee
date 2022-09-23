@@ -16,12 +16,21 @@ $(function () {
   setInterval(() => {
     if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--media') === false) {
       $('.burger').addClass('burger--scroll')
-      $('.up').addClass('up--scroll')
+      // $('.up').addClass('up--scroll')
     } else {
       $('.burger').removeClass('burger--scroll')
-      $('.up').removeClass('up--scroll')
+      // $('.up').removeClass('up--scroll')
     }
   }, 0);
+
+  setInterval(() => {
+    if ($(window).scrollTop() > 110 && $('.header__top').hasClass('header__top--media') === false) {
+      $('.header__top-nav').addClass('header__top-nav--scroll')
+    } else {
+      $('.header__top-nav').removeClass('header__top-nav--scroll')
+    }
+  }, 0);
+
 
   setInterval(() => {
     if ($('.overlay').hasClass('overlay--visible')) {
