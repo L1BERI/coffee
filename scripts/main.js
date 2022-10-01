@@ -34,12 +34,9 @@ $(function () {
 
   setInterval(() => {
     if ($('.overlay').hasClass('overlay--visible')) {
-      $('body').css('overflow-y', 'hidden')
+      $('body').css('overflow', 'hidden')
     } else {
-      $('body').css('overflow-y', 'visible')
-      $(window).scroll(function(){
-        $('body').scrollTop(0);
-});
+      $('body').css('overflow', 'scroll')
     }
 
   }, 0);
