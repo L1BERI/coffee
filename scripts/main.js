@@ -31,7 +31,14 @@ $(function () {
     }
   }, 0);
 
-
+  $('.nav__list-item').on('click', function(e){
+    e.preventDefault()
+    if ($('.header__top').hasClass('header__top--media')){
+      $('.header__top').removeClass('header__top--media')
+      $('.overlay').removeClass('overlay--visible')
+      $('body').css('overflow-y', 'scroll')
+    }
+  })
   setInterval(() => {
     if ($('.overlay').hasClass('overlay--visible')) {
       $('body').css('overflow', 'hidden')

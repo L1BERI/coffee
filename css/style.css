@@ -543,9 +543,12 @@ button {
     position: fixed;
     top: 0;
     right: 0;
+    width: 100%;
     bottom: 0;
     background: #817070;
     z-index: 100;
+    justify-content: center;
+    align-items: center;
     padding: 0 100px;
     display: flex;
     transform: translateX(100%);
